@@ -1,0 +1,3 @@
+commit_transaction
+
+{"requests": [{"create_schema": {"placeholder_id": -1, "schema_name": "kinds"}}, {"create_view": {"placeholder_id": -3, "schema_id": -1, "view_name": "v2", "sql": "SELECT 1"}}]}

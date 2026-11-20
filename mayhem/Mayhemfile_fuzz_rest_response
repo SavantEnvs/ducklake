@@ -1,0 +1,11 @@
+project: savantenvs/ducklake
+target: fuzz_rest_response
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rest_response/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_rest_response
+    libfuzzer: true
+    timeout: 10

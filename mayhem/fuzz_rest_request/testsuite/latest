@@ -1,0 +1,4 @@
+get_latest_snapshot
+Q include_catalog=true
+Q include_stats=true
+

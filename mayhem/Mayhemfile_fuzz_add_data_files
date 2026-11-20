@@ -1,0 +1,11 @@
+project: savantenvs/ducklake
+target: fuzz_add_data_files
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_add_data_files/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_add_data_files
+    libfuzzer: true
+    timeout: 10
